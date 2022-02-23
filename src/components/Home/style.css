@@ -1,0 +1,51 @@
+.Home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeTitle,
+.homeSubtitle {
+  text-align: center;
+}
+.homeSubtitle {
+  opacity: 25%;
+  margin-bottom: 2rem !important;
+  margin-top: -1.2rem !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--first-color);
+  border-color: var(--first-color);
+}
+.ant-checkbox-wrapper {
+  right: 1rem;
+}
+.poster {
+  max-width: 1200px;
+  max-height: 600px;
+  float: right;
+}
+.login-form-forgot {
+  position: relative;
+  left: 3.8rem;
+  color: var(--first-color);
+}
+@media screen and (max-width: 600px) {
+  .poster {
+    display: none;
+  }
+  .Home {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
